@@ -1,0 +1,411 @@
+@font-face {
+    font-family: "Heavitas";
+    src: url(../fonts/Heavitas.ttf);
+}
+
+:root {
+    --color-light: #8222dc;
+    --color-medium: #6807c5;
+    --color-dark: #5101a5;
+    --font-default: Arial, Verdana, Helvetica, sans-serif;
+    --font-heavitas: "Heavitas", sans-serif;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    min-height: 100vh;
+    font-family: var(--font-heavitas);
+}
+
+/* ---------------------- Menu ---------------------- */
+.sidebar__hamburger-menu {
+    display: none;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-medium);
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar__profile-photo {
+    width: 25vh;
+    height: 25vh;
+    border-radius: 50%;
+    border: 10px solid var(--color-light);
+    box-shadow: 2px 2px var(--color-dark);
+    margin-bottom: 20px;
+}
+
+.sidebar__info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.sidebar__info-list li {
+    margin: 5vh;
+    font-size: 1.5rem;
+}
+
+.sidebar__info-list a:hover {
+    color: #ffffff77;
+}
+
+/* ---------------------- Main content ---------------------- */
+main {
+    margin: 0 20% 100px 0;
+}
+
+section {
+    margin-top: 20%;
+}
+
+h3 {
+    font-size: 2.5rem;
+    margin: 40vh 0 4vh;
+    text-align: center;
+}
+
+.content {
+    width: 80%;
+    margin: 0 10% 0 30%;
+}
+
+/* ---------------------- About me ---------------------- */
+#about-me {
+    scroll-margin-top: 25em;
+}
+
+.about-me__description {
+    font-family: var(--font-default);
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1vh;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 4vh;
+}
+
+.about-me__social-networks li {
+    margin-top: 5vh;
+    display: inline-block;
+}
+
+/* ---------------------- projects ---------------------- */
+#projects {
+    scroll-margin-top: 5em;
+}
+
+.projects__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.projects__item {
+    width: 300px;
+    height: 600px;
+    background-color: rgba(128, 128, 128, 0.247);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.projects__list img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.projects__list h4, .projects__list h5, .projects__list h6 {
+    margin-top: 20px;
+}
+
+.projects__list h4 {
+    font-size: 1.3em;
+}
+
+.projects__list h5 {
+    font-size: 0.8em;
+}
+
+.projects__list h6 {
+    font-family: var(--font-default);
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-bottom: 70px;
+}
+
+.projects__item button {
+    width: 80%;
+    padding: 10px;
+    margin: 10px auto 0;
+    border: none;
+    background-color: var(--color-medium);
+    color: white;
+    font-family: var(--font-heavitas);
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.projects__item button:hover {
+    background-color: var(--color-dark);
+}
+
+/* ---------------------- technologies ---------------------- */
+#technologies {
+    scroll-margin-top: 15em;
+}
+
+.technologies__icons {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.technologies__icons img {
+    margin: 0 auto;
+}
+
+.technologies__list {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-top: 3vh;
+}
+
+.technologies__category {
+    width: 300px;
+    height: 100px;
+    margin: 3rem auto;
+}
+
+.technologies__list li {
+    font-family: var(--font-default);
+    list-style: disc;
+}
+
+/* ---------------------- certificates ---------------------- */
+#certificates {
+    scroll-margin-top: 15em;
+}
+
+.certificates__list {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.certificates__item {
+    width: 500px;
+}
+
+.certificates__list img {
+    width: 100%;
+}
+
+.certificates__all-alura-link {
+    display: block;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.certificates__all-alura-link a {
+    color: black;
+}
+
+/* ---------------------- contact ---------------------- */
+#contact {
+    scroll-margin-top: 15em;
+}
+
+.contact__info {
+    margin: 500px 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: var(--font-default);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.contact__list {
+    display: flex;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.contact__list a {
+    color: black;
+    text-decoration: underline;
+}
+
+.contact__form{
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 500px;
+}
+
+.contact__form form{
+	background-color: rgba(128, 128, 128, 0.247);
+	border-radius: 5px;
+	box-shadow: 0 1px 2px #ccc;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+	margin: 0 10px;
+	padding: 20px;
+}
+
+.contact__form input, .contact__form textarea, .contact__form button{
+	border: none;
+	border-radius: 10px;
+	font-size: 18px;
+	outline: none;
+	padding: 15px;
+	width: 95%;
+}
+
+.contact__form button{
+	background-color: var(--color-medium);
+	color: white;
+	cursor: pointer;
+	font-size: 20px;
+	font-family: var(--font-heavitas);
+}
+
+.contact__form button:hover {
+    background-color: var(--color-dark);
+}
+
+/* ---------------------- Mobile ---------------------- */
+@media(max-width: 800px) {
+
+    /* ---------------------- Menu ---------------------- */
+    .sidebar__hamburger-menu {
+        display: flex;
+        background-color: inherit;
+        align-items: center;
+        height: 25px;
+        border: none;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .sidebar__profile-photo {
+        width: 10vh;
+        height: 10vh;
+        border-radius: 50%;
+        border: 5px solid var(--color-light);
+    }
+
+    .sidebar__info-list li {
+        margin: 40px 0;
+        font-size: 1.2rem;
+    }
+
+    /* ---------------------- Main content ---------------------- */
+    .content {
+        margin: 10%;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    /* ---------------------- About me---------------------- */
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-me__description {
+        font-family: var(--font-default);
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+
+    .about-me__social-networks {
+        text-align: center;
+    }
+
+    /* ---------------------- Scroll Mobile ---------------------- */
+    #projects, #technologies, #certificates, #contact {
+        scroll-margin-top: 6em;
+    }
+
+	/* ---------------------- projects ---------------------- */
+	.projects__item h5 {
+		font-family: var(--font-default);
+		font-size: 1.1rem;
+		font-weight: bold;
+	}
+
+	.projects__item button {
+		font-family: var(--font-default);
+		font-weight: bold;
+	}
+
+    /* ---------------------- technologies ---------------------- */
+    .technologies__icons {
+        gap: 10px;
+    }
+
+    .itemTecnologia {
+        height: auto;
+    }
+
+    /* ---------------------- contact ---------------------- */
+    .contact__list {
+        display: block;
+    }
+
+    .contact__list li {
+        margin-top: 40px;
+    }
+}
